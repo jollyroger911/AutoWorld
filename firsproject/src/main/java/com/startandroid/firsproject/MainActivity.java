@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
             mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightMode));
         }
+        public void onMainMenu(View v){
+            setContentView(R.layout.activity_menu_tab);
+        }
 
         /*
     @Override
