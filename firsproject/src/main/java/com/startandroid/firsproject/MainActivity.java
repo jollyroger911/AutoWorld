@@ -1,5 +1,6 @@
 package com.startandroid.firsproject;
 
+import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    public boolean mode = false;
 
     Button buttonDM;
     Button buttonLM;
@@ -31,14 +35,18 @@ public class MainActivity extends AppCompatActivity {
         public void onDarkMode (View v){
 
             mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.darkMode));
+            mode = true;
         }
 
         public void onLightMode (View v){
 
             mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightMode));
+            mode = false;
         }
         public void onMainMenu(View v){
-            setContentView(R.layout.activity_menu_tab);
+            //setContentView(R.layout.activity_menu_tab);
+            Intent intent = new Intent("com.startandroid.firsproject.SecondAtivity");
+            startActivity(intent);
         }
 
         /*
