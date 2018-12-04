@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.Button;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
-    public boolean mode = false;
+    public static boolean mode = false;
 
     Button buttonDM;
     Button buttonLM;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             //setContentView(R.layout.activity_menu_tab);
             Intent intent = new Intent("com.startandroid.firsproject.SecondAtivity");
             startActivity(intent);
+            onPause();
         }
 
         /*
