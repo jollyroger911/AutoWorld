@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.startandroid.firsproject.SecondAtivity">
+    tools:context="com.startandroid.firsproject.SecondAtivity"
+    android:background="@drawable/screen_pic"
+    android:screenOrientation="portrait">
+
 
     <Button
         android:id="@+id/buttonSettigns"
@@ -14,18 +17,30 @@
         android:layout_marginLeft="116dp"
         android:layout_marginTop="36dp"
         android:onClick="setSettingsTab"
-        android:text="Settings"
+        android:text="@string/settings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonAutoWorld"
+        android:id="@+id/buttonUpdate"
         android:layout_width="147dp"
         android:layout_height="56dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
         android:layout_marginTop="20dp"
-        android:text="Button"
+        android:onClick="onClick"
+        android:text="@string/update"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSettigns" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="194dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>

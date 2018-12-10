@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">FirsProject</string>
+    <string name="app_name">AutoWorld</string>
     <string name="darkMode">Ночной режим</string>
     <string name="lightMode">Дневной режим</string>
     <string name="settings">Настройки</string>
+    <string name="mainMenu">Главное меню</string>
+    <string name="update">Обновить</string>
+    <string name="pics_data">Фото/ТХ</string>
+    <string name="power">Мощность</string>
+    <string name="torque">Крутящий момент</string>
+    <string name="model">Модель</string>
+    <string name="volume">Объем</string>
+    <string name="backButt">Назад</string>
+
 </resources>
