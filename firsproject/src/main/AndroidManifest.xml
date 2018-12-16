@@ -25,8 +25,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".TemplateCars" />
-        <activity android:name=".TemplateForPics"></activity>
+        <activity android:name=".TemplateCars" >
+        <intent-filter>
+            <action android:name="com.startandroid.firsproject.TemplateCars" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".TemplateForPics">
+            <intent-filter>
+                <action android:name="com.startandroid.firsproject.TemplateForPics" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

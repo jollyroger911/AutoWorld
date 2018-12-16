@@ -6,10 +6,10 @@
     <string name="mainMenu">Главное меню</string>
     <string name="update">Обновить</string>
     <string name="pics_data">Фото/ТХ</string>
-    <string name="power">Мощность</string>
-    <string name="torque">Крутящий момент</string>
+    <string name="power">Мощность, лс</string>
+    <string name="torque">Крутящий момент, нм</string>
     <string name="model">Модель</string>
-    <string name="volume">Объем</string>
+    <string name="volume">Объем, см</string>
     <string name="backButt">Назад</string>
 
 </resources>

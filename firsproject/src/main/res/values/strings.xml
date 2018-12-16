@@ -6,10 +6,10 @@
     <string name="mainMenu">Main menu</string>
     <string name="update">Update</string>
     <string name="pics_data">Pics/TC</string>
-    <string name="power">Power</string>
-    <string name = "torque">Torque</string>
+    <string name="power">Power, hp</string>
+    <string name = "torque">Torque, N/M</string>
     <string name="model">Model</string>
-    <string name="volume">Volume</string>
+    <string name="volume">Volume, cc</string>
     <string name="backButt">Back</string>
 
 </resources>

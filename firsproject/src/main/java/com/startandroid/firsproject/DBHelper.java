@@ -19,7 +19,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-     //   Log.d(LOG_TAG, "--- onCreate database ---");
+        //   Log.d(LOG_TAG, "--- onCreate database ---");
         // создаем таблицу с полями
         db.execSQL("create table mytable ("
                 + "id integer primary key autoincrement,"
@@ -35,6 +35,8 @@ public class DBHelper extends SQLiteOpenHelper {
     public static class MainActivity extends AppCompatActivity {
 
         public static boolean mode = false;
+
+
 
         DBHelper dbhelper;
 
@@ -59,62 +61,23 @@ public class DBHelper extends SQLiteOpenHelper {
             });
 
         }
-            public void onDarkMode (View v){
+        public void onDarkMode (View v){
 
-                mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.darkMode));
-                mode = true;
-            }
+            mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.darkMode));
+            mode = true;
+        }
 
-            public void onLightMode (View v){
+        public void onLightMode (View v){
 
-                mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightMode));
-                mode = false;
-            }
-            public void onMainMenu(View v){
-                //setContentView(R.layout.activity_menu_tab);
-                Intent intent = new Intent("com.startandroid.firsproject.SecondAtivity");
-                startActivity(intent);
-                onPause();
-            }
+            mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightMode));
+            mode = false;
+        }
+        public void onMainMenu(View v){
+            //setContentView(R.layout.activity_menu_tab);
+            Intent intent = new Intent("com.startandroid.firsproject.SecondAtivity");
+            startActivity(intent);
+            onPause();
+        }
 
-            /*
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-           // private ConstraintLayout mConstraintLayout;
-            buttonDM = (Button) findViewById(R.id.buttonDarkMode);
-            buttonLM = (Button) findViewById(R.id.buttonLightMode);
-
-            View.OnClickListener oclBtn = new View.OnClickListener() {
-                @Override
-
-                public void onClick(View v) {
-                    // по id определеяем кнопку, вызвавшую этот обработчик
-                    switch (v.getId()) {
-                        case R.id.buttonDarkMode:
-                            // кнопка dark mode
-                            mConstraintLayout.setBackgroundColor(ContextCompat
-                                    .getColor(MainActivity.this, R.color.darkMode));
-                            break;
-                        case R.id.buttonLightMode:
-                            // кнопка light mode
-                            mConstraintLayout.setBackgroundColor(ContextCompat
-                                    .getColor(MainActivity.this, R.color.lightMode));
-                            break;
-                        }
-
-                    }
-                public void onDarkMode(View view) {
-
-                    mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.darkMode));
-                }
-
-                public void onGreenButtonClick(View view) {
-                    mConstraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightMode));
-                }
-                };
-        }*/
     }
 }
-

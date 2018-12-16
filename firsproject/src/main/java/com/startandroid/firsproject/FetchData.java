@@ -39,7 +39,7 @@ public class FetchData extends AsyncTask<Void,Void,Void> {
             for (int i = 0; i < ja.length(); i++){
                 JSONObject jo = (JSONObject) ja.get(i);
                 SecondAtivity.names[i] = (String) jo.get("brand");
-                SecondAtivity.model[i] = (String) jo.get("model");
+                SecondAtivity.model[i] = (String) jo.get("modelName");
                 SecondAtivity.power[i] = (String) jo.get("power");
                 SecondAtivity.torque[i] = (String) jo.get("torque");
                 SecondAtivity.volume[i] = (String) jo.get("volume");
